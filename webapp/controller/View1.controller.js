@@ -9,6 +9,7 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("com.kpmg.exercise3.controller.View1", {
+		formatter: Formatter,
 		onInit: function () {
 			var oModel = new JSONModel(sap.ui.require.toUrl("com.kpmg.exercise3/products.json"));
 			this.getView().setModel(oModel);
